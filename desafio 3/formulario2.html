@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/estilos2.css">
+    <link rel="stylesheet" href="https://emojiterra.com/es/">
+
+</head>
+<body>
+
+    <div id="contenedor">
+        <div class="Titulo">Veni al Gym! 💪</p>
+        </div>
+        <form action="https://postman-echo.com/post" method="post"></form>
+        
+        <fieldset>
+            <legend>🙋 Datos Personales 👀</legend>
+
+            <label for="Nombre">Nombre:*</label>
+            <input id="Nombre" type="text" name="nombre"><br>
+
+            <label for="Apellido">Apellido:*</label>
+            <input id="Apellido" type="text" name="Apellido"><br>
+
+            <label for="Documento">Documento:*</label>
+            <input id="Documento" type="number" name="Documento"><br>
+
+            <label for="Nacionalidad">Nacionalidad:*</label>
+            <select id="Nacionalidad" name="nacionalidad" required>
+            <option value="">- Seleccionar -</option>
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="paraguay">Paraguay</option>
+            </select><br>
+
+
+            
+            <label for="Nombre">Contanos un poco de vos...</label>
+            <textarea name="Comentarios" id="Comentarios" rows="3" cols="20"></textarea><br>
+            
+            <label for="sexo">Sexo:*</label><br>
+            <input type="radio" id="femenino" name="sexo" value="femenino">
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="Otro" name="sexo" value="Otro">
+            <label for="Otro">Otro</label>
+
+         </fieldset>
+         
+        <div class="circulos"></div>
+
+         <fieldset>
+            <legend>📱Datos del contacto 📨</legend>
+
+            <label for="telefono">Teléfono:</label>
+            <input id="tel" type="telefono" name="telefono" placeholder="Código de área y número"> <br><br>
+
+            <label for="correoelectronico">Correo Electrónico*:</label>
+            <input id="email" type="email" name="email" placeholder="Ej: Mail@gmail.com">
+
+        </fieldset>
+
+        <div class="circulos"></div>
+
+        <fieldset>
+            <legend>🏍Actividades🤸</legend>
+            <p>Por favor, indicá cuáles actividades te interesan</p>
+
+            <p><strong>Sede Palermo:</strong></p>
+            <label><input type="checkbox" name="palermo" value="basquet"> Básquet</label>
+            <label><input type="checkbox" name="palermo" value="boxeo"> Boxeo</label>
+            <label><input type="checkbox" name="palermo" value="futbol"> Fútbol</label>
+            <label><input type="checkbox" name="palermo" value="tenis">Tenis</label>
+
+            <p><strong>Sede Rosario:</strong></p>
+            <label><input type="checkbox" name="rosario" value="basquet"> Básquet</label>
+            <label><input type="checkbox" name="rosario" value="futbol"> Fútbol</label>
+            <label><input type="checkbox" name="rosario" value="rugby"> Rugby</label>
+            <label><input type="checkbox" name="rosario" value="voley"> Voley</label>
+            </fieldset>
+
+               <div class="checkbox-contenedor">
+           <label><input type="checkbox" name="condiciones"> Acepto las condiciones</label><br>
+           <label><input type="checkbox" name="novedades" checked> Deseo recibir novedades</label>
+        </div>
+
+
+           <p><span>*</span> campo obligatorio.</p>
+
+            <div class="campos"></div>
+            <fieldset>
+            <input type="submit" value="Iniciar afiliación">
+            <input type="reset" value="Restablecer">
+            </fieldset>
+
+
+
+          </div>
+
+
+
+    
+</body>
+</html>
